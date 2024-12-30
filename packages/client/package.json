@@ -8,13 +8,13 @@
 		"format": "nr lint --fix"
 	},
 	"dependencies": {
-		"hono": "^4.6.15"
+		"hono": "catalog:"
 	},
 	"devDependencies": {
-		"@antfu/ni": "^0.23.2",
-		"@ryoppippi/eslint-config": "npm:@jsr/ryoppippi__eslint-config@^0.0.25",
+		"@antfu/ni": "catalog:",
+		"@ryoppippi/eslint-config": "catalog:",
 		"@types/node": "^20.11.17",
-		"eslint": "^9.17.0",
+		"eslint": "catalog:",
 		"tsx": "^4.7.1",
 		"vitest": "^2.1.8"
 	}

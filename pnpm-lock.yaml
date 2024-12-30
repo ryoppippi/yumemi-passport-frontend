@@ -4,6 +4,24 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@antfu/ni':
+      specifier: ^0.23.2
+      version: 0.23.2
+    '@ryoppippi/eslint-config':
+      specifier: npm:@jsr/ryoppippi__eslint-config
+      version: 0.0.25
+    eslint:
+      specifier: ^9.17.0
+      version: 9.17.0
+    eslint-plugin-format:
+      specifier: ^0.1.3
+      version: 0.1.3
+    hono:
+      specifier: ^4.6.15
+      version: 4.6.15
+
 importers:
 
   .: {}
@@ -11,20 +29,20 @@ importers:
   packages/client:
     dependencies:
       hono:
-        specifier: ^4.6.15
+        specifier: 'catalog:'
         version: 4.6.15
     devDependencies:
       '@antfu/ni':
-        specifier: ^0.23.2
+        specifier: 'catalog:'
         version: 0.23.2
       '@ryoppippi/eslint-config':
-        specifier: npm:@jsr/ryoppippi__eslint-config@^0.0.25
+        specifier: 'catalog:'
         version: '@jsr/ryoppippi__eslint-config@0.0.25(@typescript-eslint/utils@8.18.2(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@0.1.3(eslint@9.17.0(jiti@1.21.7)))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)(vitest@2.1.8(@types/node@20.17.10))'
       '@types/node':
         specifier: ^20.11.17
         version: 20.17.10
       eslint:
-        specifier: ^9.17.0
+        specifier: 'catalog:'
         version: 9.17.0(jiti@1.21.7)
       tsx:
         specifier: ^4.7.1
@@ -61,10 +79,10 @@ importers:
         version: 1.0.7(tailwindcss@3.4.17)
     devDependencies:
       '@antfu/ni':
-        specifier: ^0.23.2
+        specifier: 'catalog:'
         version: 0.23.2
       '@ryoppippi/eslint-config':
-        specifier: npm:@jsr/ryoppippi__eslint-config
+        specifier: 'catalog:'
         version: '@jsr/ryoppippi__eslint-config@0.0.25(@typescript-eslint/utils@8.18.2(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2))(@vue/compiler-sfc@3.5.13)(eslint-plugin-format@0.1.3(eslint@9.17.0(jiti@1.21.7)))(eslint@9.17.0(jiti@1.21.7))(typescript@5.7.2)(vitest@2.1.8(@types/node@20.17.10))'
       '@types/node':
         specifier: ^20
@@ -76,10 +94,10 @@ importers:
         specifier: ^19
         version: 19.0.2(@types/react@19.0.2)
       eslint:
-        specifier: ^9.17.0
+        specifier: 'catalog:'
         version: 9.17.0(jiti@1.21.7)
       eslint-plugin-format:
-        specifier: ^0.1.3
+        specifier: 'catalog:'
         version: 0.1.3(eslint@9.17.0(jiti@1.21.7))
       postcss:
         specifier: ^8
