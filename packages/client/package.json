@@ -8,7 +8,8 @@
 		"format": "nr lint --fix"
 	},
 	"dependencies": {
-		"hono": "catalog:"
+		"hono": "catalog:",
+		"valibot": "catalog:"
 	},
 	"devDependencies": {
 		"@antfu/ni": "catalog:",
