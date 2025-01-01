@@ -5,7 +5,8 @@
 		"jsxImportSource": "hono/jsx",
 		"module": "NodeNext",
 		"types": [
-			"node"
+			"node",
+			"vitest/importMeta"
 		],
 		"strict": true,
 		"verbatimModuleSyntax": true,
