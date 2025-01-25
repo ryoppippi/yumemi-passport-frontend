@@ -21,6 +21,9 @@ catalogs:
     hono:
       specifier: ^4.6.15
       version: 4.6.15
+    ufo:
+      specifier: ^1.5.4
+      version: 1.5.4
     valibot:
       specifier: ^1.0.0-beta.9
       version: 1.0.0-beta.9
@@ -53,6 +56,9 @@ importers:
       tsx:
         specifier: ^4.7.1
         version: 4.19.2
+      ufo:
+        specifier: 'catalog:'
+        version: 1.5.4
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@20.17.10)
