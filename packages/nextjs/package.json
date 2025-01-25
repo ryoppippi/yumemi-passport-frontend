@@ -6,9 +6,8 @@
 		"dev": "next dev --turbopack",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint && nr lint:eslint",
-		"lint:eslint": "eslint --cache .",
-		"format": "nr lint:eslint --fix"
+		"lint": "next lint",
+		"format": "nr lint --fix"
 	},
 	"dependencies": {
 		"class-variance-authority": "^0.7.1",
@@ -22,6 +21,7 @@
 	},
 	"devDependencies": {
 		"@antfu/ni": "catalog:",
+		"@next/eslint-plugin-next": "catalog:",
 		"@ryoppippi/eslint-config": "catalog:",
 		"@tailwindcss/postcss": "^4.0.0",
 		"@types/node": "^20",
